@@ -11,18 +11,19 @@
         "git": "git@github.com:EventedMind/meteor-handlebars-server.git",
         "branch": "master"
       },
-      "minimongoid": {}
+      "minimongoid": {},
+      "googlemaps": {}
     },
     "packages": {
       "iron-router": {
         "git": "https://github.com/EventedMind/iron-router.git",
-        "tag": "v0.7.0",
-        "commit": "05f34bc48c4cad9fdaa366c1ddcabe6980232ece"
+        "tag": "v0.7.1",
+        "commit": "d1ffb3f06ea4c112132b030f2eb1a70b81675ecb"
       },
       "accounts-entry": {
         "git": "https://github.com/Differential/accounts-entry.git",
         "branch": "master",
-        "commit": "f9abbc5f77abaa3f3cb22f343cd19ab9482003ff"
+        "commit": "56053814e3a693bd913c461e1065df2f954fc537"
       },
       "handlebars-server": {
         "git": "git@github.com:EventedMind/meteor-handlebars-server.git",
@@ -34,15 +35,20 @@
         "tag": "v0.8.3",
         "commit": "8a4849426f1775f9886f303067e50877696fae43"
       },
+      "googlemaps": {
+        "git": "https://github.com/drewjw81/meteor-googlemaps.git",
+        "tag": "v0.0.2",
+        "commit": "da8785c82cfd7de0111f898ef10728e7ed24e361"
+      },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",
-        "tag": "v0.2.2",
-        "commit": "8bc53798fe5965669ae67c72f91829fcfdceabfd"
+        "tag": "v0.2.4",
+        "commit": "b40e9b0612329288d75cf52ad14a7da64bb8618f"
       },
       "accounts-t9n": {
         "git": "https://github.com/softwarerero/meteor-accounts-t9n.git",
-        "tag": "v0.0.3",
-        "commit": "d1710f979d6955459d9ce0374df81d22c3c6a6ab"
+        "tag": "v0.0.5",
+        "commit": "ad9539a8818049d5d9fa050d8b2a1f62706483b1"
       },
       "underscore-string-latest": {
         "git": "https://github.com/TimHeckel/meteor-underscore-string.git",
