@@ -4,4 +4,4 @@ Template.addLocation.events
     location =
       name: t.find('#name').value
       address: t.find('#address').value
-    console.log location
+    Meteor.call 'addLocation', location
