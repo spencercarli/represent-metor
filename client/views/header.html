@@ -9,9 +9,10 @@
 
         <div class="pull-right">
           <button type="button" class="btn btn-primary"><i class="fa fa-info"></i> About the Map</button>
-          <button type="button" class="btn btn-success"><i class="fa fa-plus"></i> Add a Location</button>
+          <button type="button" class="btn btn-success"  data-toggle="modal" data-target="#addLocation"><i class="fa fa-plus"></i> Add a Location</button>
         </div>
       </div><!-- /.container-fluid -->
     </nav>
   </header>
+  {{> addLocation}}
 </template>
