@@ -13,5 +13,8 @@ Template.addLocation.events
         location.lat = results[0].geometry.location.k
         location.lng = results[0].geometry.location.A
         Meteor.call 'addLocation', location
+        $('#addLocation').toggle()
+        $('body').removeClass('modal-open');
+        $('.modal-backdrop').remove();
       else
         alert "Geocode was not successful for the following reason: " + status
