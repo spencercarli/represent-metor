@@ -13,13 +13,13 @@ GoogleMaps.init
 
   locations = Location.find()
   locations.forEach (location) ->
-    mapIt(location.lat, location.lng, map)
+    mapIt(location, map)
 
 
-mapIt = (lat, lng, map) ->
-  latlng = new google.maps.LatLng(lat, lng)
+mapIt = (location, map) ->
+  latlng = new google.maps.LatLng(location.lat, location.lng)
   new google.maps.Marker({
       position: latlng,
       map: map,
-      title: 'Hello World!'
+      title: location.name
   })
