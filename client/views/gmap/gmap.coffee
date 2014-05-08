@@ -18,8 +18,20 @@ GoogleMaps.init
 
 mapIt = (location, map) ->
   latlng = new google.maps.LatLng(location.lat, location.lng)
-  new google.maps.Marker({
+  marker = new google.maps.Marker({
       position: latlng,
       map: map,
-      title: location.name
+      title: location.name,
+      animation: google.maps.Animation.DROP
   })
+  addInfo(map, marker, location)
+
+addInfo = (map, marker, location) ->
+  google.maps.event.addListener marker, "click", ->
+    $('#add-info').html(
+      "<h2>" + location.name + "</h2>" +
+      "<p>" + location.info + "</p>" +
+      "<p>" + location.time + "</p>" +
+      "<p>" + location.address + "</p>" +
+      "<a href='" + location.more + "'>Learn More</a>"
+    );
