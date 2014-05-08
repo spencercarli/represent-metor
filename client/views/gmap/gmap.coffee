@@ -33,5 +33,5 @@ addInfo = (map, marker, location) ->
       "<p>" + location.info + "</p>" +
       "<p>" + location.time + "</p>" +
       "<p>" + location.address + "</p>" +
-      "<a href='" + location.more + "'>Learn More</a>"
+      "<a class='btn btn-primary' href='" + location.more + "'>Learn More</a>"
     );
