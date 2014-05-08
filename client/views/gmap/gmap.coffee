@@ -36,7 +36,7 @@ addInfo = (map, marker, location) ->
         "<p>" + location.info + "</p>" +
         "<p>" + location.time + "</p>" +
         "<p>" + location.address + "</p>" +
-        "<a class='btn btn-primary' href='" + location.more + "'>Learn More</a>"
+        "<a class='btn btn-primary' target='_blank' href='" + location.more + "'>Learn More</a>"
       )
       info.fadeIn(200)
     )

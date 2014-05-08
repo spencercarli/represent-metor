@@ -6,6 +6,9 @@ Template.addLocation.events
     location =
       name: t.find('#name').value
       address: address
+      time: t.find('#time').value
+      info: t.find('#info').value
+      more: t.find('#more').value
 
     geo = new google.maps.Geocoder()
     geo.geocode { address: address }, (results, status) ->
