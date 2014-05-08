@@ -28,10 +28,15 @@ mapIt = (location, map) ->
 
 addInfo = (map, marker, location) ->
   google.maps.event.addListener marker, "click", ->
-    $('#add-info').html(
-      "<h2>" + location.name + "</h2>" +
-      "<p>" + location.info + "</p>" +
-      "<p>" + location.time + "</p>" +
-      "<p>" + location.address + "</p>" +
-      "<a class='btn btn-primary' href='" + location.more + "'>Learn More</a>"
-    );
+    info = $('#add-info')
+    info.fadeOut(200, ->
+      info.hide()
+      info.html(
+        "<h2>" + location.name + "</h2>" +
+        "<p>" + location.info + "</p>" +
+        "<p>" + location.time + "</p>" +
+        "<p>" + location.address + "</p>" +
+        "<a class='btn btn-primary' href='" + location.more + "'>Learn More</a>"
+      )
+      info.fadeIn(200)
+    )
