@@ -11,9 +11,20 @@ GoogleMaps.init
   map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions)
   map.setCenter center
 
-  locations = Location.find()
-  locations.forEach (location) ->
-    mapIt(location, map)
+  # Probably a better way to do this
+  Meteor.setTimeout(->
+    locations = Location.find()
+    console.log locations.count()
+    locations.forEach (location) ->
+      mapIt(location, map)
+  , 2000)
+
+  # locations = Location.find()
+  # while locations.count() is 0
+  #   locations = Location.find()
+  #
+  # locations.forEach (location) ->
+  #   mapIt(location, map)
 
 
 mapIt = (location, map) ->
